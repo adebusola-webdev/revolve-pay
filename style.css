@@ -4,6 +4,7 @@
   list-style: none;
   text-decoration: none;
   font-family: sans-serif;
+
 }
 
 .logo {
@@ -145,6 +146,7 @@
   color: white;
   background-color: #3b73ce;
   padding: 0 1rem;
+  font-family: 'Unbounded',sans-serif;
 }
 .hero-small-text {
   color: #3b73ce;
@@ -164,9 +166,10 @@
   background-color: #3066be;
 
   padding: 30px;
+  padding-bottom:10px;
   border-radius: 1rem;
   width: 500px;
-  height: 250px;
+  height: auto;
   box-shadow: 10px 10px 78px 0px rgba(202, 184, 255, 0.75);
   -webkit-box-shadow: 10px 10px 78px 0px rgba(202, 184, 255, 0.75);
   -moz-box-shadow: 10px 10px 78px 0px rgba(202, 184, 255, 0.75);
@@ -185,21 +188,24 @@ select {
   width: 100%;
   height: 40px;
 
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   border-radius: 0.2rem;
   outline: none;
+  padding: 0 5px;
 }
 input {
-  width: 100%;
+  width: 98%;
   height: 35px;
   border-radius: 0.2rem;
   border: #28c2ff 1px solid;
   outline: 0;
+  padding: 0 5px;
 }
 label {
   font-size: 15px;
   font-weight: bolder;
   margin-bottom: 10px;
+
 }
 .value {
   float: right;
@@ -284,7 +290,7 @@ animation-iteration-count: infinite;
 .p-head{
   font-size: 40px;
   font-family: "unbounded";
-  width: 650px;
+  max-width: 650px;
   margin-top: 60px;
   color:#3066be;
   
@@ -314,6 +320,7 @@ animation-iteration-count: infinite;
   padding: 40px 0;
   text-align: center;
   margin-top: 70px;
+  padding-bottom: 80px;
 }
 
 .why-choose-us h2 {
@@ -330,7 +337,7 @@ animation-iteration-count: infinite;
 
 .feature {
   width: 25%;
-  height: 250px ;
+  height: auto ;
   padding: 20px;
   margin: 0;
   
@@ -385,8 +392,9 @@ animation-iteration-count: infinite;
   width: 350px;
   height: 300px;
   border-radius: 10px;
-  transition:  0.5s ease-in-out;
+ 
   background-color:white;
+  margin-bottom: 50px;
   /* box-shadow: 10px 10px 78px 0px rgba(202, 184, 255, 0.75);
   -webkit-box-shadow: 10px 10px 78px 0px rgba(202, 184, 255, 0.75);
   -moz-box-shadow: 10px 10px 78px 0px rgba(202, 184, 255, 0.75); */
@@ -394,7 +402,7 @@ animation-iteration-count: infinite;
 }
 
 .review-card:hover{
-  
+  transition:  0.5s ease-in-out;
   height: 400px;
   scale:1.1;
 
@@ -406,13 +414,14 @@ animation-iteration-count: infinite;
   height: 200px;
   background-color: black;
   top: 20px;
-  transition: 0.5s ease-in;
+
   border-radius: 100%;
-
-
+  transition: 0.5s ease-in;
 }
+
+
 .review-card:hover .review-c-img{
-  scale: 0.75;
+  scale: 0.7;
   top: -100px;
 }
 .review-c-img img{
@@ -430,6 +439,10 @@ animation-iteration-count: infinite;
   overflow: hidden;
   transition: 0.5s ease-in-out;
 }
+.c-review p{
+  padding: 20px;
+  text-transform: initial;
+}
 .review-card:hover .c-review{
   height: 250px;
   top: 150px;
@@ -437,7 +450,7 @@ animation-iteration-count: infinite;
 
 .simple-con{
   background: linear-gradient(rgba(109, 87, 237, 0.724),rgba(109, 87, 237, 0.725)),url(Images/office-image.jpeg);
-  height: 80vh;
+  height: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -484,8 +497,8 @@ animation-iteration-count: infinite;
 }
 
 
-.contact-container{
-  background-color:black;
+.contact-section-con{
+  margin-top: 20px;
   color: #3066be;
 }
 .contact-container h1{
@@ -497,17 +510,21 @@ animation-iteration-count: infinite;
   
 }
 .social-media-con a{
-  font-size: 30px;
+  font-size: 25px;
   color: #3066be;
 }
-.social-media-con{
- display: flex;
- gap: 20px;
-}
+
 .info-flex{
   display: flex;
   gap: 20px;
   align-items: center;
+  width: 80%;
+
+  margin-bottom: 10px;
+}
+.info-flex h5{
+  text-transform: capitalize;
+  font-weight: 900;
 }
 .info-flex span i{
   font-size: 20px;
@@ -523,13 +540,75 @@ animation-iteration-count: infinite;
   font-family: 'Unbounded',sans-serif;
 }
 
+.c-top-con{
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.c-top-con ul{
+  display: flex;
+  gap: 15px;
+  
+}
+.contact-info-content{
+ 
+  max-width: 500px;
+  border: #3066be 3px solid;
+  margin:0 auto;
+
+ 
+  color:black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 30px;
+  box-shadow: 10px 10px 78px 0px rgba(202, 184, 255, 0.75);
+  -webkit-box-shadow: 10px 10px 78px 0px rgba(202, 184, 255, 0.75);
+  -moz-box-shadow: 10px 10px 78px 0px rgba(202, 184, 255, 0.75);
+  
+}
+.contact-info-content h3{
+  text-transform: capitalize;
+  font-family: 'Unbounded', sans-serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.footer-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:black;
+  color: white;
+  font-size: 16px;
+  padding: 10px 0;
+}
 
 
 
 
 
 
-
+@media (max-width:1300px) {
+  .payment{
+    flex-direction: column-reverse;
+   
+    margin: auto;
+    padding: 10px;
+    
+  }
+  .p-img{
+    max-width: 90%;
+  }
+  .p-head{
+    
+     font-size: 50px;
+  }
+  .p-img{
+    margin: 0 auto;
+   }
+}
 
 
 @media (max-width: 725px) {
@@ -583,6 +662,30 @@ animation-iteration-count: infinite;
     background-color: #3b73ce;
     padding: 0 0;
   }
+  .feature-con{
+    flex-direction: column;
+    gap:20px;
+  }
+  .feature{
+    width: 70%;
+    margin: auto;
+    
+  }
+  .client-review-con{
+    flex-direction: column;
+  }
+  .simple-con-content{
+    margin: auto;
+  }
+  .large-content{
+    font-size: 20px;
+  
+  }
+  .p-img{
+    margin: 0 auto;
+   }
+ 
+  
 }
 
 @media (max-width: 650px) {
@@ -610,4 +713,91 @@ animation-iteration-count: infinite;
   .button {
     margin-left: 10px;
   }
+  .small-content{
+    font-size: 10px;
+    padding-top: 60px;
+  
+    
+  }
+  .large-content{
+    font-size: 18px;
+   
+  
+  }
+  .content-p{
+    max-width: 600px;
+    font-size: 10px;
+    margin-bottom: 20px;
+    line-height: 1.1rem;
+    
+  }
+  .semi-small-content{
+    font-size: 18px;
+  }
+  .review-head{
+    font-size: 20px;
+  }
+  .p-head{
+    font-size: 25px;
+  }
+  .p{
+    font-size: 15px;
+    line-height:1.5rem ;
+  }
+  .review-head{
+    font-size: 35px;
+  }
+  .why-choose-us h2{
+    font-size: 30px;
+  }
+}
+@media (max-width: 370px) {
+  .c-top-con{
+    flex-direction: column;
+  }
+  .review-card{
+     max-width: 200px;
+  }
+  .review-c-img{
+  
+    width: 100px;
+    height: 100px;
+    
+  }
+  .p-head{
+    
+    font-size: 30px;
+ }
+ .p{
+  font-size: 15px;
+  line-height: 1.3rem;
+ }
+ .button {
+  margin-left:0;
+ }
+ .p-img{
+  margin: 0 auto;
+ }
+ .feature h3{
+  font-size: 19px;
+ }
+ .feature p{
+  font-size: 12px;
+ }
+ .c-review h2{
+  font-size: 19px;
+ }
+ .c-review p{
+  font-size: 12px;
+ }
+ .review-card:hover .review-c-img{
+  scale: 0.7;
+  top: -50px;
+}
+.why-choose-us h2{
+  font-size: 20px;
+}
+.review-head{
+  font-size: 23px;
+}
 }

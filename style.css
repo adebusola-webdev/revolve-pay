@@ -230,8 +230,8 @@ label {
 .payment {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-
+  margin-top: 10px;
+  padding-top: 0;
   padding: 30px;
   gap: 30px;
 }
@@ -562,7 +562,7 @@ label {
     flex-direction: column-reverse;
 
     margin: auto;
-    padding: 10px;
+    
   }
   .p-button {
     margin-bottom: 10px;
@@ -661,7 +661,7 @@ label {
     flex-direction: column-reverse;
 
     margin: auto;
-    padding: 10px;
+   
   }
 }
 
@@ -758,6 +758,7 @@ label {
   }
   .p-img {
     margin: 0 auto;
+    height: 30vh;
   }
   .feature h3 {
     font-size: 19px;
